@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 1000;
+    float total = 0;
+    for (float i = 1; i <= 5; i++) {
+        a = a + a * 0.3;
+        total = total + a;
+        cout << "Total rent for " << i << " years is " << total << endl;
+    }
+    cout << "Rent for 5 th years is " << a << endl;
+}
