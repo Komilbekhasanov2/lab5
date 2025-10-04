@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main(){
+    float a;
+    cout<<"Miles    Kilometres" <<endl;
+    for (int i=1; i<=10; i++){
+        a=i*1.609;
+        cout << "  " << i << "        " << a << "   " << endl;
+    }
+}
