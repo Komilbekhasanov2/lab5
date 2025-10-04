@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, i = 2, counter= 0;
+    cout << "Enter a number: ";
+    cin >> n;
+    while (i < n) {
+        if (n % i == 0) {
+            counter = 1;
+            break;
+        }
+        i++;
+    }
+    if (n <= 1 || counter == 1)
+        cout << "Number is not prime" << endl;
+    else
+        cout << "Number is prime" << endl;
+    return 0;
+}
