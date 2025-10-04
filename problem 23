@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int n;
+    int max=0;
+    while (pow(2,n)<30000) {
+        max=n;
+        n=n+1;
+    }
+    cout<<max<<endl;
+}
