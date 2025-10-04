@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int a=0,n,i=0;
+    cout << "Enter a binary number: ";
+    cin >> n;
+    while (n>0) {
+        if (n%10==0 || n%10==1) {
+            a=a+((n%10)*pow(2,i));
+            n=n/10;
+        }
+        else {
+            cout << "Enter a binary number: ";
+        }
+    i=i+1;
+    }
+    cout << a << endl;
+}
