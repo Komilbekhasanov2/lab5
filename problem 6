@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    float b, c;
+    float totalCredits = 0, totalWeighted = 0;
+    cout << "Enter the number of classes : ";
+    cin >> a;
+    for (int i = 0; i < a; i++) {
+        cout << "Enter the credits for subject and total mark : ";
+        cin >> b >> c;
+        totalWeighted += b * c;
+        totalCredits  += b;
+    }
+    float GPA = totalWeighted / totalCredits;
+    cout << "Your total GPA is " << GPA << endl;
+    return 0;
+}
